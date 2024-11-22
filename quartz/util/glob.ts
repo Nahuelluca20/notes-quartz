@@ -1,5 +1,5 @@
 import path from "path"
-import { FilePath } from "./path"
+import type { FilePath } from "./path"
 import { globby } from "globby"
 
 export function toPosixPath(fp: string): string {

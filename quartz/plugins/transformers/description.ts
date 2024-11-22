@@ -1,6 +1,6 @@
-import { Root as HTMLRoot } from "hast"
+import type { Root as HTMLRoot } from "hast"
 import { toString } from "hast-util-to-string"
-import { QuartzTransformerPlugin } from "../types"
+import type { QuartzTransformerPlugin } from "../types"
 import { escapeHTML } from "../../util/escape"
 
 export interface Options {

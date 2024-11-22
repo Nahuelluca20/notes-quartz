@@ -1,6 +1,6 @@
 import remarkGfm from "remark-gfm"
 import smartypants from "remark-smartypants"
-import { QuartzTransformerPlugin } from "../types"
+import type { QuartzTransformerPlugin } from "../types"
 import rehypeSlug from "rehype-slug"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
 

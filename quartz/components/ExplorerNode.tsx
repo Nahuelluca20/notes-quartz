@@ -1,12 +1,12 @@
 // @ts-ignore
-import { QuartzPluginData } from "../plugins/vfile"
+import type { QuartzPluginData } from "../plugins/vfile"
 import {
   joinSegments,
   resolveRelative,
   clone,
   simplifySlug,
-  SimpleSlug,
-  FilePath,
+  type SimpleSlug,
+  type FilePath,
 } from "../util/path"
 
 type OrderEntries = "sort" | "filter" | "map"

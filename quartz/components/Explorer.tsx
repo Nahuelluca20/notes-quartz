@@ -1,10 +1,10 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import type { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import explorerStyle from "./styles/explorer.scss"
 
 // @ts-ignore
 import script from "./scripts/explorer.inline"
-import { ExplorerNode, FileNode, Options } from "./ExplorerNode"
-import { QuartzPluginData } from "../plugins/vfile"
+import { ExplorerNode, FileNode, type Options } from "./ExplorerNode"
+import type { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
 
@@ -44,7 +44,7 @@ export default ((userOpts?: Partial<Options>) => {
   // memoized
   let fileTree: FileNode
   let jsonTree: string
-  let lastBuildId: string = ""
+  let lastBuildId = ""
 
   function constructFileTree(allFiles: QuartzPluginData[]) {
     // Construct tree from allFiles

@@ -1,8 +1,8 @@
-import { FontWeight, SatoriOptions } from "satori/wasm"
-import { GlobalConfiguration } from "../cfg"
-import { QuartzPluginData } from "../plugins/vfile"
-import { JSXInternal } from "preact/src/jsx"
-import { ThemeKey } from "./theme"
+import type { FontWeight, SatoriOptions } from "satori/wasm"
+import type { GlobalConfiguration } from "../cfg"
+import type { QuartzPluginData } from "../plugins/vfile"
+import type { JSXInternal } from "preact/src/jsx"
+import type { ThemeKey } from "./theme"
 
 /**
  * Get an array of `FontOptions` (for satori) given google font names
@@ -20,7 +20,12 @@ export async function getSatoriFont(headerFontName: string, bodyFontName: string
 
   // Convert fonts to satori font format and return
   const fonts: SatoriOptions["fonts"] = [
-    { name: headerFontName, data: headerFont, weight: headerWeight, style: "normal" },
+    {
+      name: headerFontName,
+      data: headerFont,
+      weight: headerWeight,
+      style: "normal",
+    },
     { name: bodyFontName, data: bodyFont, weight: bodyWeight, style: "normal" },
   ]
   return fonts

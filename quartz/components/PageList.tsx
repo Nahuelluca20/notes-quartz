@@ -1,8 +1,8 @@
-import { FullSlug, resolveRelative } from "../util/path"
-import { QuartzPluginData } from "../plugins/vfile"
+import { type FullSlug, resolveRelative } from "../util/path"
+import type { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
-import { QuartzComponent, QuartzComponentProps } from "./types"
-import { GlobalConfiguration } from "../cfg"
+import type { QuartzComponent, QuartzComponentProps } from "./types"
+import type { GlobalConfiguration } from "../cfg"
 
 export type SortFn = (f1: QuartzPluginData, f2: QuartzPluginData) => number
 

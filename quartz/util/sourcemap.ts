@@ -1,5 +1,5 @@
 import fs from "fs"
-import sourceMapSupport from "source-map-support"
+import type sourceMapSupport from "source-map-support"
 import { fileURLToPath } from "url"
 
 export const options: sourceMapSupport.Options = {
@@ -7,7 +7,7 @@ export const options: sourceMapSupport.Options = {
   // import cache busting
   retrieveSourceMap(source) {
     if (source.includes(".quartz-cache")) {
-      let realSource = fileURLToPath(source.split("?", 2)[0] + ".map")
+      const realSource = fileURLToPath(source.split("?", 2)[0] + ".map")
       return {
         map: fs.readFileSync(realSource, "utf8"),
       }

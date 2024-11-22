@@ -1,11 +1,14 @@
-import { QuartzTransformerPlugin } from "../types"
-import { PluggableList } from "unified"
+import type { QuartzTransformerPlugin } from "../types"
+import type { PluggableList } from "unified"
 import { SKIP, visit } from "unist-util-visit"
-import { ReplaceFunction, findAndReplace as mdastFindReplace } from "mdast-util-find-and-replace"
-import { Root, Html, Paragraph, Text, Link, Parent } from "mdast"
+import {
+  type ReplaceFunction,
+  findAndReplace as mdastFindReplace,
+} from "mdast-util-find-and-replace"
+import type { Root, Html, Paragraph, Text, Link, Parent } from "mdast"
 import { Node } from "unist"
-import { VFile } from "vfile"
-import { BuildVisitor } from "unist-util-visit"
+import type { VFile } from "vfile"
+import type { BuildVisitor } from "unist-util-visit"
 
 export interface Options {
   orComponent: boolean

@@ -1,5 +1,5 @@
-import { FilePath, FullSlug, joinSegments } from "../../util/path"
-import { QuartzEmitterPlugin } from "../types"
+import { type FilePath, type FullSlug, joinSegments } from "../../util/path"
+import type { QuartzEmitterPlugin } from "../types"
 
 // @ts-ignore
 import spaRouterScript from "../../components/scripts/spa.inline"
@@ -7,8 +7,8 @@ import spaRouterScript from "../../components/scripts/spa.inline"
 import popoverScript from "../../components/scripts/popover.inline"
 import styles from "../../styles/custom.scss"
 import popoverStyle from "../../components/styles/popover.scss"
-import { BuildCtx } from "../../util/ctx"
-import { QuartzComponent } from "../../components/types"
+import type { BuildCtx } from "../../util/ctx"
+import type { QuartzComponent } from "../../components/types"
 import { googleFontHref, joinStyles } from "../../util/theme"
 import { Features, transform } from "lightningcss"
 import { transform as transpile } from "esbuild"

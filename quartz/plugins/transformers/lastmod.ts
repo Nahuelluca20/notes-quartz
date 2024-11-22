@@ -1,7 +1,7 @@
 import fs from "fs"
 import path from "path"
 import { Repository } from "@napi-rs/simple-git"
-import { QuartzTransformerPlugin } from "../types"
+import type { QuartzTransformerPlugin } from "../types"
 import chalk from "chalk"
 
 export interface Options {

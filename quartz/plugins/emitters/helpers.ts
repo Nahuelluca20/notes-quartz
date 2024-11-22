@@ -1,7 +1,7 @@
 import path from "path"
 import fs from "fs"
-import { BuildCtx } from "../../util/ctx"
-import { FilePath, FullSlug, joinSegments } from "../../util/path"
+import type { BuildCtx } from "../../util/ctx"
+import { type FilePath, type FullSlug, joinSegments } from "../../util/path"
 
 type WriteOptions = {
   ctx: BuildCtx

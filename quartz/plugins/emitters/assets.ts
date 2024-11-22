@@ -1,11 +1,11 @@
-import { FilePath, joinSegments, slugifyFilePath } from "../../util/path"
-import { QuartzEmitterPlugin } from "../types"
+import { type FilePath, joinSegments, slugifyFilePath } from "../../util/path"
+import type { QuartzEmitterPlugin } from "../types"
 import path from "path"
 import fs from "fs"
 import { glob } from "../../util/glob"
 import DepGraph from "../../depgraph"
-import { Argv } from "../../util/ctx"
-import { QuartzConfig } from "../../cfg"
+import type { Argv } from "../../util/ctx"
+import type { QuartzConfig } from "../../cfg"
 
 const filesToCopy = async (argv: Argv, cfg: QuartzConfig) => {
   // glob all non MD files in content folder and copy it over

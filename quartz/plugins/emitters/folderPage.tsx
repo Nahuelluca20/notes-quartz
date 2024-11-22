@@ -1,15 +1,15 @@
-import { QuartzEmitterPlugin } from "../types"
-import { QuartzComponentProps } from "../../components/types"
+import type { QuartzEmitterPlugin } from "../types"
+import type { QuartzComponentProps } from "../../components/types"
 import HeaderConstructor from "../../components/Header"
 import BodyConstructor from "../../components/Body"
 import { pageResources, renderPage } from "../../components/renderPage"
-import { ProcessedContent, QuartzPluginData, defaultProcessedContent } from "../vfile"
-import { FullPageLayout } from "../../cfg"
+import { type ProcessedContent, type QuartzPluginData, defaultProcessedContent } from "../vfile"
+import type { FullPageLayout } from "../../cfg"
 import path from "path"
 import {
-  FilePath,
-  FullSlug,
-  SimpleSlug,
+  type FilePath,
+  type FullSlug,
+  type SimpleSlug,
   stripSlashes,
   joinSegments,
   pathToRoot,

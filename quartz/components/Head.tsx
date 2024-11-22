@@ -1,12 +1,12 @@
 import { i18n } from "../i18n"
-import { FullSlug, joinSegments, pathToRoot } from "../util/path"
+import { type FullSlug, joinSegments, pathToRoot } from "../util/path"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
 import { googleFontHref } from "../util/theme"
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import satori, { SatoriOptions } from "satori"
+import type { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import satori, { type SatoriOptions } from "satori"
 import fs from "fs"
 import sharp from "sharp"
-import { ImageOptions, SocialImageOptions, getSatoriFont, defaultImage } from "../util/og"
+import { type ImageOptions, type SocialImageOptions, getSatoriFont, defaultImage } from "../util/og"
 import { unescapeHTML } from "../util/escape"
 
 /**

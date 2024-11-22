@@ -1,10 +1,10 @@
 import matter from "gray-matter"
 import remarkFrontmatter from "remark-frontmatter"
-import { QuartzTransformerPlugin } from "../types"
+import type { QuartzTransformerPlugin } from "../types"
 import yaml from "js-yaml"
 import toml from "toml"
 import { slugTag } from "../../util/path"
-import { QuartzPluginData } from "../vfile"
+import type { QuartzPluginData } from "../vfile"
 import { i18n } from "../../i18n"
 
 export interface Options {

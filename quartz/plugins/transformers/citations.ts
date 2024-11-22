@@ -1,7 +1,7 @@
 import rehypeCitation from "rehype-citation"
-import { PluggableList } from "unified"
+import type { PluggableList } from "unified"
 import { visit } from "unist-util-visit"
-import { QuartzTransformerPlugin } from "../types"
+import type { QuartzTransformerPlugin } from "../types"
 
 export interface Options {
   bibliographyFile: string

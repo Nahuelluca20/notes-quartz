@@ -1,5 +1,5 @@
-import { Node, Parent } from "hast"
-import { Data, VFile } from "vfile"
+import type { Node, Parent } from "hast"
+import { type Data, VFile } from "vfile"
 
 export type QuartzPluginData = Data
 export type ProcessedContent = [Node, VFile]

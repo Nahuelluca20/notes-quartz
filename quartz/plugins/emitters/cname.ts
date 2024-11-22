@@ -1,5 +1,5 @@
-import { FilePath, joinSegments } from "../../util/path"
-import { QuartzEmitterPlugin } from "../types"
+import { type FilePath, joinSegments } from "../../util/path"
+import type { QuartzEmitterPlugin } from "../types"
 import fs from "fs"
 import chalk from "chalk"
 import DepGraph from "../../depgraph"

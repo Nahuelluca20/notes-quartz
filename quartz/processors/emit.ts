@@ -1,9 +1,9 @@
 import { PerfTimer } from "../util/perf"
 import { getStaticResourcesFromPlugins } from "../plugins"
-import { ProcessedContent } from "../plugins/vfile"
+import type { ProcessedContent } from "../plugins/vfile"
 import { QuartzLogger } from "../util/log"
 import { trace } from "../util/trace"
-import { BuildCtx } from "../util/ctx"
+import type { BuildCtx } from "../util/ctx"
 
 export async function emitContent(ctx: BuildCtx, content: ProcessedContent[]) {
   const { argv, cfg } = ctx
