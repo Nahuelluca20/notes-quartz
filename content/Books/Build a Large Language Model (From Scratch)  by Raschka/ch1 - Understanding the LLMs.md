@@ -1,6 +1,8 @@
 ---
 tags:
   - LLM
+	- Build a Large Language Model (From Scratch)
+	- Books
 ---
 
 LLMs have remarkable capabilities to understand, generate, and interpret human language.
