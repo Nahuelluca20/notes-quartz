@@ -1,8 +1,8 @@
 ---
 tags:
   - LLM
-	- Build a Large Language Model (From Scratch)
-	- Books
+  - Build a Large Language Model
+  - Books
 ---
 
 ![[Pasted image 20241209083145.png]]
